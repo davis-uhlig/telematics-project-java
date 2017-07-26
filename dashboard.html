@@ -1,26 +1,62 @@
 <html>
-<title>Vehicle Telematics Dashboard</title>
-<body>
-<h1 align="center">Averages for # vehicles</h1>
-<table align="center">
-    <tr>
-        <th>Odometer (miles) |</th><th>Consumption (gallons) |</th><th>Last Oil Change |</th><th>Engine Size (liters)</th>
-    </tr>
-    <tr>
-        <td align="center">#</td><td align="center">#</td><td align="center">#</td align="center"><td align="center">#</td>
-    </tr>
-</table>
-<h1 align="center">History</h1>
-<table align="center" border="1">
-    <tr>
-        <th>VIN</th><th>Odometer (miles)</th><th>Consumption (gallons)</th><th>Last Oil Change</th><th>Engine Size (liters)</th>
-    </tr>
-    <tr>
-        <td align="center">#</td><td align="center">#</td><td align="center">#</td><td align="center">#</td align="center"><td align="center">#</td>
-    </tr>
-    <tr>
-        <td align="center">45435</td><td align="center">123</td><td align="center">234</td><td align="center">345</td align="center"><td align="center">4.5</td>
-    </tr>
-</table>
-</body>
+ <head> 
+  <title>Vehicle Telematics Dashboard</title> 
+ </head> 
+ <body> 
+  <h1 id="averages" align="center">Averages for # vehicles</h1> 
+  <table id="averagesTable" align="center"> 
+   <tbody> 
+    <tr> 
+     <th>Odometer (miles) |</th> 
+     <th>Consumption (gallons) |</th> 
+     <th>Last Oil Change |</th> 
+     <th>Engine Size (liters)</th> 
+    </tr> 
+    <tr> 
+     <td id="odometerAverage" align="center">24339.8</td> 
+     <td id="consumptionAverage" align="center">644.8</td> 
+     <td id="oilChangeAverage" align="center">22619.8</td> 
+     <td id="engineSizeAverage" align="center">152.3</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <h1 align="center">History</h1> 
+  <table id="historyTable" align="center" border="1"> 
+   <tr>
+    <th>VIN</th>
+    <th>Odometer (miles)</th>
+    <th>Consumption (gallons)</th>
+    <th>Last Oil Change</th>
+    <th>Engine Size (liters)</th>
+   </tr>
+   <tr>
+    <td>1111</td>
+    <td>111.0</td>
+    <td> 111.0</td>
+    <td>11.0</td>
+    <td>111.0</td>
+   </tr>
+   <tr>
+    <td>123</td>
+    <td>123.0</td>
+    <td> 123.0</td>
+    <td>123.0</td>
+    <td>123.0</td>
+   </tr>
+   <tr>
+    <td>345</td>
+    <td>345.0</td>
+    <td> 345.0</td>
+    <td>345.0</td>
+    <td>345.0</td>
+   </tr>
+   <tr>
+    <td>387819237</td>
+    <td>96780.0</td>
+    <td> 2000.0</td>
+    <td>90000.0</td>
+    <td>30.0</td>
+   </tr>
+  </table>  
+ </body>
 </html>
