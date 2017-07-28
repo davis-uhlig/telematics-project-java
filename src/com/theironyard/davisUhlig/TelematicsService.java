@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 /**
  * Created by duhlig on 7/21/17.
  */
@@ -46,7 +45,6 @@ public class TelematicsService {
         File file = new File(".");
         for (File f : file.listFiles()) {
             if (f.getName().endsWith(".json")) {
-
 
                 try {
                     ObjectMapper readMapper = new ObjectMapper();
@@ -113,7 +111,6 @@ public class TelematicsService {
         System.out.println(oilChangeAverage.html());
         System.out.println(engineSizeAverage.html());
 
-
         Element historyTable = doc.getElementById("historyTable");
 
         historyTable.html(" ");
@@ -130,8 +127,6 @@ public class TelematicsService {
         oilChangeHeader.html("Last Oil Change");
         engineSizeHeader.html("Engine Size (liters)");
 
-
-
         for (int i = 0; i < userVehicleInfo.size(); i++){
             Element historyValues = historyTable.appendElement("tr");
             Element vinValue = historyValues.appendElement("td");
@@ -145,8 +140,6 @@ public class TelematicsService {
             oilChangeValue.html("<td id=\"oilChange\" align=\"center\">" + String.format("%.1f", userVehicleInfo.get(i).getOdometerReadingForLastOilChange()) + "</td>");
             engineSizeValue.html("<td id=\"engineSize\" align=\"center\">" + String.format("%.1f", userVehicleInfo.get(i).getEngineSizeLiters()) + "</td>");
 
-
-
         }
         String html = doc.html();
 
@@ -157,10 +150,6 @@ public class TelematicsService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
-
-
 }
 
